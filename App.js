@@ -1,19 +1,41 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
-const header=React.createElement("h1",{},"Bhuvana Boston");
-const root=ReactDOM.createRoot(document.getElementById("root"));
-const jsxhead = (<>
+const assignment3ce = React.createElement('div', { className: 'title' }, [
+  React.createElement('h1', {}, 'Hello'),
+  React.createElement('h2', {}, 'Bhuvana'),
+  React.createElement('h3', {}, 'Boston'),
+]);
+
+const assignment3jsx = (
+  <div className="title">
+    <h1>Hello</h1>
+    <h2>Bhuvana</h2>
+    <h3>Boston</h3>
+  </div>
+);
+
+const Assignment3fc = () => {
+  return (
+    <div className="title">
+      <h1>Hello</h1>
+      <h2>Bhuvana</h2>
+      <h3>Boston</h3>
+    </div>
+  );
+};
+const root = ReactDOM.createRoot(document.getElementById('root'));
+/*const jsxhead = (<>
 <h1>Helloo</h1>
 <div className="container">
     <h2>Bhuvana Boston</h2>
-</div>
-</>);
+</div>`
+</>);*/
 
-const Title=()=>(<div className="title">
+/*const Title=()=>(<div className="title">
     <h1>Heading</h1>
-</div>)
-const Funcomponent=()=>{
+</div>)*/
+/*const Funcomponent=()=>{
     return(
         <div className="container">
             {header}
@@ -22,5 +44,5 @@ const Funcomponent=()=>{
     <h1>Bhuvana Boston</h1>
 </div>
     );
-}
-root.render(<Funcomponent/>);
+}*/
+root.render(<Assignment3fc />);
