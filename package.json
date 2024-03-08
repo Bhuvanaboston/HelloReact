@@ -2,8 +2,9 @@
   "name": "reactprojectpackage",
   "version": "1.0.0",
   "description": "My React App",
-  "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -13,6 +14,15 @@
   "author": "Bhuvana Boston",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.12.0"
-  }
+    "parcel": "^2.12.0",
+    "prettier": "3.2.5",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlist": [
+    "last 3 versions"
+  ]
 }
