@@ -9,4 +9,18 @@ const jsxhead = (<>
     <h2>Bhuvana Boston</h2>
 </div>
 </>);
-root.render(jsxhead);
+
+const Title=()=>(<div className="title">
+    <h1>Heading</h1>
+</div>)
+const Funcomponent=()=>{
+    return(
+        <div className="container">
+            {header}
+            {jsxhead}
+            <Title/>
+    <h1>Bhuvana Boston</h1>
+</div>
+    );
+}
+root.render(<Funcomponent/>);
